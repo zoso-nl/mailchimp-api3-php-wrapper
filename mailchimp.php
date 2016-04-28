@@ -42,7 +42,7 @@
 		curl_setopt($ch, CURLOPT_CUSTOMREQUEST, $method);
 		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 		
-		if($method == 'post' || $method == 'put'){
+		if($method == 'post' || $method == 'put' || $method == 'patch'){
 			curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
 		}
 
